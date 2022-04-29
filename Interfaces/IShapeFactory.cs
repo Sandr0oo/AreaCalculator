@@ -2,7 +2,7 @@
 {
     interface IShapeFactory
     {
-        public IShape CreateTriangle(double a, double b, double c);
-        public IShape CreateCircle(double radius);
+        public Triangle CreateTriangle(double a, double b, double c);
+        public Circle CreateCircle(double radius);
     }
 }
