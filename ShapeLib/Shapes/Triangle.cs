@@ -33,7 +33,7 @@ namespace ShapeLib
         {
             double[] sidesOfTringle = new double[] { _a, _b, _c };
             Array.Sort(sidesOfTringle);
-            return Math.Pow(sidesOfTringle[0], 2) == Math.Pow(sidesOfTringle[1], 2) + Math.Pow(sidesOfTringle[2], 2);
+            return Math.Pow(sidesOfTringle[2], 2) == Math.Pow(sidesOfTringle[1], 2) + Math.Pow(sidesOfTringle[0], 2);
         }
     }
 }
