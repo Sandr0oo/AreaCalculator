@@ -8,8 +8,8 @@ namespace ShapeLib
 
         public Circle(double radius)
         {
-            if (radius < 0)
-                throw new Exception("Радиус не может быть меньше нуля");
+            if (radius <= 0)
+                throw new Exception("Радиус должен быть больше нуля");
             _radius = radius;
         }
 

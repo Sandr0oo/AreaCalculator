@@ -15,6 +15,23 @@ namespace ShapeLib.Tests
         public void CircleTest()
         {
             Assert.ThrowsException<Exception>(() => new Circle(-1));
+
+            Assert.ThrowsException<Exception>(() => new Circle(0));
+        }
+
+        [TestMethod()]
+        public void GetAreaTest()
+        {
+            //arrange
+            double r = 1;
+            double expected = Math.PI;
+
+            //act
+            ShapesFactroy factroy = new ShapesFactroy();
+            IShape circle = factroy.CreateCircle(r);
+
+            //assert
+            Assert.AreEqual(expected, circle.GetArea());
         }
     }
 }
