@@ -1,6 +1,6 @@
 ﻿namespace ShapeLib
 {
-    interface IShapeFactory
+    public interface IShapeFactory
     {
         public Triangle CreateTriangle(double a, double b, double c);
         public Circle CreateCircle(double radius);

@@ -12,6 +12,11 @@ namespace ShapeLib
         {
             if (a < 0 || b < 0 || c < 0)
                 throw new Exception("Сторона тругольника не может быть меньше нуля.");
+
+            bool isTringleExist = a + b > c && b + c > a && a + c > b;
+            if (!isTringleExist)
+                throw new Exception("Такой треугольник не существует");
+
             _a = a;
             _b = b;
             _c = c;
